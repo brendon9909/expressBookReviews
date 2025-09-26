@@ -1,0 +1,25 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password": "pass"
+}
+
+###
+
+POST http://localhost:5000/customer/login
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password": "pass"
+}
+
+###
+
+PUT http://localhost:5000/customer/auth/review/1?review=good
+
+###
+
+DELETE http://localhost:5000/customer/auth/review/1
